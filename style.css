@@ -4,22 +4,41 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-main {
-  background-color: #efe9e9;
+html, body {
   width: 100vw;
   height: 100vh;
-
+}
+body {
+  background-color: #efe9e9;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: column nowrap;
 }
-main > p {
-  margin: 20px;
-  font-size: 1.2rem;
+.body-hint {
+  margin: 20px auto;
+  padding: 10px;
+  width: min(820px, 94vw);
+  font-weight: 100;
 }
-#popup-button {
-  width: fit-content;
+.body-hint::before {
+  content: '*';
+}
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.popup-title {
+  padding: min(10px, 2vw);
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.popup-button {
   height: fit-content;
-  padding: 20px 40px;
+  margin: 0 100%;
+}
+.disclaimer {
+    display: none;
 }

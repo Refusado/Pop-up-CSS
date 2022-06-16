@@ -1,9 +1,9 @@
-#popup-button, #popup-button div {
+.popup-button, .popup-button div {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-#popup-button label {
+.popup-button label {
   box-sizing: border-box;
 }
 
@@ -35,20 +35,20 @@ label.bg-close-popup {
 }
 
 /* Container do popup */
-#popup-container {
+.popup-container {
   border-radius: var(--popup-container-radius);
   overflow: hidden;
 }
-#popup-container .popup-content {
+.popup-container .popup-content {
   padding: var(--popup-content-padding);
   overflow-y: scroll;
 }
-#popup-container .popup-content h3 {
+.popup-container .popup-content h3 {
   font-size: var(--popup-title-size);
   margin-bottom: 34px;
   margin-top: 0;
 }
-#popup-container .popup-content p {
+.popup-container .popup-content p {
   font-size: var(--popup-content-size);
 }
 
@@ -78,7 +78,7 @@ label.bg-close-popup {
   width: 140vw;
   height: 140vh;
 }
-input.bg-close-popup:checked ~ #popup-container, 
+input.bg-close-popup:checked ~ .popup-container, 
 input.bg-close-popup:checked ~ label.bg-close-popup, 
 input.bg-close-popup:checked ~ label.x-close-popup {
   display: none;
@@ -102,14 +102,14 @@ label.x-close-popup::after {
   font-size: var(--popup-close-size);
   content: var(--popup-close-content);
 }
-input.x-close-popup:checked ~ #popup-container,  
+input.x-close-popup:checked ~ .popup-container,  
 input.x-close-popup:checked ~ label.bg-close-popup,
 input.x-close-popup:checked ~ label.x-close-popup {
   display: none;
 }
 
 /* Container do popup */
-#popup-container {
+.popup-container {
   color: var(--popup-container-color);
   background-color: var(--popup-container-bg-color);
   width: var(--popup-container-width);
@@ -118,7 +118,7 @@ input.x-close-popup:checked ~ label.x-close-popup {
   top: calc(50% - (var(--popup-container-height) / 2));
   left: calc(50% - (var(--popup-container-width) / 2));
 }
-#popup-container .popup-content {
+.popup-container .popup-content {
   margin-top: calc(var(--popup-close-height) + var(--popup-close-mt) + var(--popup-content-mt) + var(--popup-close-mb));
   margin-left: var(--popup-content-ml);
   margin-right: var(--popup-content-mr);

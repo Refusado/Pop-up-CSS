@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+main {
+  background-color: #efe9e9;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+main > p {
+  margin: 20px;
+  font-size: 1.2rem;
+}
+#popup-button {
+  width: fit-content;
+  height: fit-content;
+  padding: 20px 40px;
+}

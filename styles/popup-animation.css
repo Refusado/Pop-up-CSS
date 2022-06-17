@@ -1,0 +1,46 @@
+label.bg-close-popup {
+  animation: popup-opacity 210ms forwards;
+}
+.popup-container {
+  animation: popup-opening 240ms ease-out forwards;
+}
+label.x-close-popup {
+  animation: x-popup-opening 240ms ease-out forwards;
+}
+
+@keyframes popup-opening {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  52% {
+    opacity: 1;
+    transform: scale(1.014);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes x-popup-opening {
+  0% {
+    transform:
+    translateY(calc(var(--popup-container-height) * (20 / 100)))
+    translateX(calc(var(--popup-container-width) * (-20 / 100))) scale(0.6);
+  }
+  52% {
+    transform:
+    translateY(calc(var(--popup-container-height) * (-0.14 / 100) - 3px))
+    translateX(calc(var(--popup-container-width) * (0.14 / 100) + 3px)) scale(1.014);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes popup-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,52 @@
+<style>
+  #abrir-popup:checked ~ #conteudo {
+    display: block;
+  }
+  #fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #fechar-popup-btn{
+    display: none;
+  }
+
+  #abrir-popup-btn {
+    display: block;
+    color: white;
+    background-color: #a45fd2;
+    width: fit-content;
+    padding: 12px 34px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 15px -5px #20003044;
+    cursor: pointer;
+  }
+  #fechar-popup-btn {
+    background-color: #00000028;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #conteudo {
+    box-sizing: border-box;
+    position: fixed;
+    width: min(380px, 90vw);
+    height: 160px;
+    left: max(calc(50vw - 380px / 2), 4vw);
+    top: calc(50vh - 80px);
+    
+    padding: 22px;
+    background-color: #efd7ff;
+    border: 2px solid #c59fde;
+    border-radius: 6px;
+    box-shadow: 0px 5px 15px -5px #0000003c;
+  }
+</style>
+
+<input id="abrir-popup" name="popup" type="radio" hidden>
+<input id="fechar-popup" name="popup" type="radio" hidden checked>
+
+<label id="abrir-popup-btn" for="abrir-popup">Abrir</label>
+<label id="fechar-popup-btn" for="fechar-popup"></label>
+
+<div id="conteudo">
+    <p>Conteúdo</p>
+</div>
